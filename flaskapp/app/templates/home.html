@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Home Page - my blog</title>
+</head>
+<body>
+    <h1>Welcome {{name}}!</h1>
+    <a href="https://www.google.com/">not google</a>
+    <ul>
+        {% for city_name in city_names %}
+        <li>{{city_name}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
