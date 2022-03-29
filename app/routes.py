@@ -1,4 +1,4 @@
-from app import myapp_obj
+from app import myobj
 from flask import render_template, flash, request
 
 from flask_wtf import FlaskForm
@@ -14,7 +14,7 @@ name = "Lisa"
 city_names = ["Paris", "London", "Rome", "Tahiti"]
 
 
-@myapp_obj.route("/", methods=['GET', 'POST'])
+@myobj.route("/", methods=['GET', 'POST'])
 def home():
     form = InputForm()
     if form.validate_on_submit():
